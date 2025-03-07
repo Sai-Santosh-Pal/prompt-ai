@@ -634,7 +634,7 @@ if __name__ == "__main__":
 enhancer = PromptEnhancerAI()
 basic_prompts, enhanced_prompts, platforms = enhancer.prepare_training_data()
 
-enhancer.train(basic_prompts, enhanced_prompts, platforms, epochs=3)
+enhancer.train(basic_prompts, enhanced_prompts, platforms, epochs=20)
 
 enhanced = enhancer.generate_prompt("mountain view", "midjourney")
 print(enhanced)
